@@ -12,12 +12,17 @@ namespace Exercise
 {
     public partial class QueuingForm: Form
     {
+        private CashierClass cashier;
+
+
         public QueuingForm()
         {
             InitializeComponent();
+
+            cashier = new CashierClass();
         }
 
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)//Cashier Button
         {
 
         }
