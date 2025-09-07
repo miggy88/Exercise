@@ -22,14 +22,16 @@ namespace Exercise
             cashier = new CashierClass();
         }
 
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)//Cashier Button
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            lblQueue.Text = cashier.CashierGeneratedNumber("P - ");
+            CashierClass.getNumberInQueue = lblQueue.Text;
+            CashierClass.CashierQueue.Enqueue(CashierClass.getNumberInQueue);
         }
 
         private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
