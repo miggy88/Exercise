@@ -13,6 +13,7 @@ namespace Exercise
     public partial class QueuingForm: Form
     {
         private CashierClass cashier;
+        private Timer timer;
 
 
         public QueuingForm()
@@ -20,6 +21,16 @@ namespace Exercise
             InitializeComponent();
 
             cashier = new CashierClass();
+
+            timer = new Timer();
+            timer.Interval = 1000; 
+            timer.Tick += new EventHandler(timer1_Tick);
+            timer.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
