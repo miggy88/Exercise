@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCashier = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblQueue = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // btnCashier
             // 
-            this.button1.Location = new System.Drawing.Point(84, 101);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 112);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Cashier";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnCashier.Location = new System.Drawing.Point(84, 101);
+            this.btnCashier.Name = "btnCashier";
+            this.btnCashier.Size = new System.Drawing.Size(126, 112);
+            this.btnCashier.TabIndex = 0;
+            this.btnCashier.Text = "Cashier";
+            this.btnCashier.UseVisualStyleBackColor = true;
+            this.btnCashier.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -53,14 +53,14 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Position in Queue";
             // 
-            // textBox1
+            // lblQueue
             // 
-            this.textBox1.Location = new System.Drawing.Point(257, 146);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(293, 70);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.lblQueue.Location = new System.Drawing.Point(257, 146);
+            this.lblQueue.Multiline = true;
+            this.lblQueue.Name = "lblQueue";
+            this.lblQueue.Size = new System.Drawing.Size(293, 70);
+            this.lblQueue.TabIndex = 3;
+            this.lblQueue.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // QueuingForm
             // 
@@ -68,9 +68,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(707, 505);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lblQueue);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCashier);
             this.Name = "QueuingForm";
             this.Text = "QueuingForm";
             this.ResumeLayout(false);
@@ -80,9 +80,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCashier;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox lblQueue;
     }
 }
 
