@@ -28,38 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.listCashierQueue = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // btnRefresh
             // 
-            this.button1.Location = new System.Drawing.Point(128, 60);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 32);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Refresh";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnRefresh.Location = new System.Drawing.Point(128, 60);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(94, 32);
+            this.btnRefresh.TabIndex = 0;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnNext
             // 
-            this.button2.Location = new System.Drawing.Point(128, 98);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 32);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Next";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnNext.Location = new System.Drawing.Point(128, 98);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(94, 32);
+            this.btnNext.TabIndex = 1;
+            this.btnNext.Text = "Next";
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.button2_Click);
             // 
-            // textBox1
+            // listCashierQueue
             // 
-            this.textBox1.Location = new System.Drawing.Point(240, 60);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(239, 311);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.listCashierQueue.Location = new System.Drawing.Point(240, 60);
+            this.listCashierQueue.Multiline = true;
+            this.listCashierQueue.Name = "listCashierQueue";
+            this.listCashierQueue.Size = new System.Drawing.Size(239, 311);
+            this.listCashierQueue.TabIndex = 2;
+            this.listCashierQueue.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // CashierWindowQueueForm
             // 
@@ -67,9 +67,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(724, 464);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.listCashierQueue);
+            this.Controls.Add(this.btnNext);
+            this.Controls.Add(this.btnRefresh);
             this.Name = "CashierWindowQueueForm";
             this.Text = "CashierWindowQueueForm";
             this.ResumeLayout(false);
@@ -79,8 +79,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Button btnNext;
+        private System.Windows.Forms.TextBox listCashierQueue;
     }
 }
