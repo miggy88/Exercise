@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace Exercise
 {
-  
-  
+
+
 
     public class CashierClass
     {
@@ -27,6 +27,17 @@ namespace Exercise
             x++;
             CashierNumber = CashierNumber + x.ToString();
             return CashierNumber;
+        }
+        public static void AddToQueue(string studentNumber)
+        {
+            CashierQueue.Enqueue(studentNumber);
+        }
+        public static void RemoveFromQueue()
+        {
+            if (CashierQueue.Count > 0)
+            {
+                CashierQueue.Dequeue();
+            }
         }
     }
 }
